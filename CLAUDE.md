@@ -22,10 +22,11 @@ ChessLite-Rebuild/
 ├── CLAUDE.md                     # 本檔：專案規則（最高優先）
 ├── README.md                     # 給人看的介紹與遊玩連結
 ├── index.html                    # 遊戲本體（唯一的執行檔）
-├── tests/
-│   └── engine.test.mjs           # 引擎自動測試：node tests/engine.test.mjs
-└── .github/workflows/pages.yml   # 推送 main 後自動部署 GitHub Pages
+└── tests/
+    └── engine.test.mjs           # 引擎自動測試：node tests/engine.test.mjs
 ```
+
+- 部署：GitHub Pages 設定為「Deploy from a branch：`main` / root」，推送到 `main` 約 1 分鐘後上線，網址 `https://pingkaikami.github.io/ChessLite-Rebuild/`。不要另加 Actions 部署 workflow。
 
 - 新增「頁面」時（見 §10），檔名用小寫 kebab-case：`puzzles.html`、`rules-guide.html`，放在根目錄，同樣遵守 §1 的單檔離線限制。
 - 不新增 `package.json`、建置工具或資料夾層級；測試只用 Node 內建模組（`fs`、`vm`、`assert`）。

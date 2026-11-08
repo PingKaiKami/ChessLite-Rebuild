@@ -19,9 +19,10 @@ ChessLite 是一款單一 HTML 檔、完全離線的西洋棋網頁：玩家執�
 ```text
 ├── CLAUDE.md                     # AI 專案規則書
 ├── index.html                    # 遊戲本體（可直接離線開啟）
-├── tests/engine.test.mjs         # 引擎 + AI 自動測試
-└── .github/workflows/pages.yml   # GitHub Pages 自動部署
+└── tests/engine.test.mjs         # 引擎 + AI 自動測試
 ```
+
+GitHub Pages 直接從 `main` 分支根目錄部署。
 
 ## 測試
 
